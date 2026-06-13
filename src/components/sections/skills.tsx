@@ -29,7 +29,7 @@ export function Skills() {
               key={s.name}
               variants={{
                 hidden: { opacity: 0, y: 24 },
-                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const } },
               }}
               whileHover={{ y: -6 }}
               className="group relative overflow-hidden rounded-3xl border border-[var(--primary)]/8 bg-white/65 backdrop-blur p-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[var(--accent)]/10 hover:border-[var(--accent)]/30"
@@ -53,7 +53,7 @@ export function Skills() {
                   initial={{ width: 0 }}
                   whileInView={{ width: `${s.level}%` }}
                   viewport={{ once: true }}
-                  transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+                  transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] as const, delay: 0.2 }}
                   className="h-full rounded-full gradient-accent"
                 />
               </div>

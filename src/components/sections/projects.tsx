@@ -62,7 +62,7 @@ export function Projects() {
                 initial={{ opacity: 0, y: 30, scale: 0.96 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.6, delay: i * 0.04, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.04, ease: [0.22, 1, 0.36, 1] as const }}
                 whileHover={{ y: -6 }}
                 className={cn(
                   "group relative overflow-hidden rounded-[2rem] border border-[var(--primary)]/8 bg-white shadow-lg shadow-[var(--primary)]/5 transition-all hover:shadow-2xl hover:shadow-[var(--primary)]/10",

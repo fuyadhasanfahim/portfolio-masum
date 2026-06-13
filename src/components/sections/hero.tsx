@@ -11,7 +11,7 @@ const fadeUp: Variants = {
         transition: {
             duration: 0.8,
             delay: i * 0.08,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
         },
     }),
 };
@@ -180,7 +180,7 @@ function ShowcaseCard() {
         <motion.div
             initial={{ opacity: 0, scale: 0.94, y: 30 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
             className="relative mx-auto w-full max-w-md"
         >
             {/* Floating chips */}

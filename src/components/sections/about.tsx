@@ -19,7 +19,7 @@ export function About() {
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as const }}
             className="lg:col-span-5"
           >
             <div className="relative">
@@ -62,7 +62,7 @@ export function About() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as const }}
             className="lg:col-span-7 space-y-6"
           >
             <p className="text-lg md:text-xl text-[var(--text)]/85 leading-relaxed">

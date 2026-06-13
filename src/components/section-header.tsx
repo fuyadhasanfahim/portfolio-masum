@@ -17,7 +17,7 @@ export function SectionHeader({ eyebrow, title, description, align = "center", c
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
       className={cn(
         "max-w-3xl",
         align === "center" ? "mx-auto text-center" : "text-left",

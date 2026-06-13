@@ -66,7 +66,7 @@ export function Contact() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
             className="lg:col-span-5 space-y-6"
           >
             <div className="rounded-3xl border border-[var(--primary)]/8 bg-white/70 backdrop-blur p-8">
@@ -123,7 +123,7 @@ export function Contact() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
             className="lg:col-span-7"
           >
             <form

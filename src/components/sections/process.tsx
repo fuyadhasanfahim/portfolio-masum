@@ -57,7 +57,7 @@ export function Process() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-80px" }}
-                  transition={{ duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 0.7, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] as const }}
                   whileHover={{ y: -6 }}
                   className="group relative overflow-hidden rounded-3xl border border-[var(--primary)]/8 bg-white/70 backdrop-blur p-7 shadow-lg shadow-[var(--primary)]/5 transition-all hover:shadow-2xl hover:shadow-[var(--accent)]/10"
                 >
